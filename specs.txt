@@ -1,0 +1,19 @@
+The program returns an error message for input with no alpha characters.
+Example Input: #%@@*&
+Expected Output: <error message>
+
+The program converts any uppercase letters to lowercase.
+Example Input: I
+Expected Output: i
+
+The program correctly encrypts a single-letter message with itself.
+Example Input: i
+Expected Output: i
+
+The program correctly encrypts a multi-letter word.
+Example Input: chicken
+Expected Output: ccn hk ie
+
+The program correctly encrypts a multi-word message.
+Example Input: the crow flies at dawn
+Expected Output: toea hwsw efan clt rid
