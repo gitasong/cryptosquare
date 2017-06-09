@@ -5,6 +5,12 @@ function square(num) {
   return nearSquare;
 }
 
+function alpha(message) {
+  // strips all non-alpha characters from a message string
+  messageAlpha = message.replace(/[^a-z,A-Z]/g, "").toLowerCase();
+  return messageAlpha;
+}
+
 
 // enter front-end logic here
 $(document).ready(function() {
@@ -15,6 +21,6 @@ $(document).ready(function() {
     // numCheck(number);
     // singleDigit(number);
     // multiSymbol(number);
-    $("#result").text(square(message));
+    $("#result").text(alpha(message));
   });
 });
