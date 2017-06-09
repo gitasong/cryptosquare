@@ -1,16 +1,20 @@
 // enter back-end logic here
-function square(num) {
-  numLength = num.length;
-  nearSquare = parseInt(numLength ** 0.5) + 1;
-  return nearSquare;
-}
-
-function alpha(message) {
+function alpha(msg) {
   // strips all non-alpha characters from a message string
-  messageAlpha = message.replace(/[^a-z,A-Z]/g, "").toLowerCase();
+  messageAlpha = msg.replace(/[^a-z,A-Z]/g, "").toLowerCase();
   return messageAlpha;
+    console.log(messageAlpha);
 }
 
+function square(message) {
+  // gets the size of the message square from the message length
+  messageLength = alpha(message).length;
+    console.log(message);
+    console.log(alpha(message));
+    console.log(messageLength);
+  squareSize = parseInt(messageLength ** 0.5) + 1;
+  return squareSize;
+}
 
 // enter front-end logic here
 $(document).ready(function() {
@@ -21,6 +25,6 @@ $(document).ready(function() {
     // numCheck(number);
     // singleDigit(number);
     // multiSymbol(number);
-    $("#result").text(alpha(message));
+    $("#result").text(square(message));
   });
 });
